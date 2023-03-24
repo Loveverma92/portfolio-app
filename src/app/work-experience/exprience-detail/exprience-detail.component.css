@@ -1,0 +1,9 @@
+/* .container {
+    width: 100%;
+} */
+
+.header h3 {
+    display: inline-block;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 600;
+}

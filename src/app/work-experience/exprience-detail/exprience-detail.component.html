@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="header">
+        <h3>{{ detail?.company }}</h3> - <i>{{ detail?.date_from }} - {{ detail?.date_to }}</i>
+    </div>
+    <div class="content">
+        <p>{{ detail?.description }}</p>
+        <mat-chip-listbox aria-label="Skills List" multiple="true">
+            <mat-chip-option *ngFor="let skill of detail?.skills;" selectable="false" selected="true" [color]="skill.is_primary ? 'primary' : 'accent'">{{ skill.title }}</mat-chip-option>
+        </mat-chip-listbox>
+    </div>
+</div>
